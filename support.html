@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - SubmitPilot</title>
+  <meta name="description" content="Support information for SubmitPilot.">
+  <link rel="icon" href="assets/submitpilot-icon.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fb;
+      --ink: #101418;
+      --muted: #58606f;
+      --line: rgba(18, 25, 38, 0.12);
+      --panel: rgba(255, 255, 255, 0.78);
+      --accent: #0a84ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #fbfcff 0%, var(--bg) 100%);
+    }
+    header {
+      backdrop-filter: blur(22px);
+      background: rgba(245, 247, 251, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+    nav, main, footer { max-width: 900px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+    nav { min-height: 62px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 700; text-decoration: none; }
+    .brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .links { display: flex; gap: 18px; font-size: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main { padding-top: 58px; padding-bottom: 64px; }
+    h1 { margin: 0; font-size: clamp(42px, 7vw, 64px); line-height: 1; letter-spacing: 0; }
+    .lead { color: var(--muted); font-size: 20px; line-height: 1.5; max-width: 720px; }
+    section {
+      margin-top: 24px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      backdrop-filter: blur(22px);
+    }
+    h2 { margin: 0 0 12px; font-size: 22px; }
+    p, li { font-size: 17px; line-height: 1.55; color: var(--muted); }
+    code { color: var(--ink); }
+    footer { padding-top: 24px; padding-bottom: 44px; border-top: 1px solid var(--line); color: var(--muted); }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0f131a; --ink: #f5f7fb; --muted: #aab3c2; --line: rgba(255,255,255,0.14); --panel: rgba(28,33,42,0.74); }
+      body { background: linear-gradient(180deg, #161b23 0%, var(--bg) 100%); }
+      header { background: rgba(15, 19, 26, 0.72); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <img src="assets/submitpilot-icon.png" alt="">
+        <span>SubmitPilot</span>
+      </a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Support</h1>
+    <p class="lead">Need help with SubmitPilot? Send a concise support request and include enough context to reproduce the issue.</p>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:support@freerangelabs.dev">support@freerangelabs.dev</a>.</p>
+      <p>Please include your macOS version, SubmitPilot version, whether the issue happens with a new target app audit or an existing audit, and the steps that led to the problem.</p>
+    </section>
+
+    <section>
+      <h2>Common Topics</h2>
+      <ul>
+        <li>Creating or resetting a target app readiness audit.</li>
+        <li>Using risk tags to add conditional checklist items.</li>
+        <li>Adding screenshots, links, files, and notes to evidence.</li>
+        <li>Exporting a Markdown readiness report.</li>
+        <li>Copying App Review notes for App Store Connect.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Not To Send</h2>
+      <p>Do not send signing certificates, provisioning profiles, passwords, private source code, unreleased customer data, or App Store Connect credentials.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 Free Range Labs. <a href="index.html">Back to SubmitPilot</a></span>
+  </footer>
+</body>
+</html>
